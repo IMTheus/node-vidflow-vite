@@ -1,0 +1,36 @@
+Ao trabalhar em um projeto Vite, é possível que você se depare com o seguinte erro no console do navegador:
+
+Uncaught SyntaxError: Cannot use import statement outside a module
+Copiar código
+Esse erro não aconteceu com a gente porque, no index.html, a importação do script.js já estava sendo feita com o atributo type="module":
+
+<script src="script.js" type="module"></script>
+
+
+PERGUNTA 
+
+
+Você está em uma equipe que trabalha em um projeto Front-end Vanilla, chamado Bytebank, e o time decide migrar esse projeto para o Vite.
+
+Para iniciar a tarefa, você já criou um novo projeto Vite com o comando npm create vite@latest, respondeu as perguntas do terminal e executou npm install dentro do projeto para instalar as dependências. Assim, a pasta node_modules do Vite foi criada.
+
+Agora você deve migrar o Bytebank para o novo projeto Vite. Quais ações você deve realizar?
+
+
+RESPOSTA 
+
+
+Copiar as dependências do Bytebank para o package.json do projeto Vite e executar npm install novamente.
+
+
+Essa é a forma correta de levar as dependências para o novo projeto. Em vez de manipular a pasta node_modules manualmente, você deve utilizar os comandos do NPM para criar ou atualizar essa pasta.
+
+
+ESSA TAMBÉM 
+
+
+
+Substituir o arquivo index.html do projeto Vite pelo arquivo HTML principal do Bytebank, que também deve se chamar index.html.
+
+
+O projeto Vite precisa de um arquivo index.html na raiz do projeto para funcionar. Além disso, você também deve remover os arquivos CSS e JS que vêm por padrão e migrar os arquivos CSS e JS do Bytebank para o novo projeto.
